@@ -19,11 +19,12 @@ buttons.appendChild(cancel);
 function passOk(){
 	let userName = document.getElementById("username").value;
 	let passWord = document.getElementById("password").value;
-	let body = document.getElementsByClassName("body");
+	let box = document.getElementById("box");
 	alert(userName);
 	alert(passWord);
 	if (userName == "Lawnmower Man"){
-		if(passWord = "7.3942"){
+		if(passWord == "7.3942"){
+			box.remove();
 			alert("Show Image Here");
 		}
 		else{
