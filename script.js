@@ -29,9 +29,8 @@ function passOk(){
 			document.body.appendChild(okImage);
 		}
 		else{
+			//Clear the inputBoxes
 			document.body.style.backgroundColor = "red";
-			userName.value = "";
-			passWord.value = "";
 		}
 	}
 }
