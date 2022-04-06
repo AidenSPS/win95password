@@ -15,21 +15,23 @@ cancel.setAttribute("onClick","winCan()");
 cancel.innerText = "Cancel";
 buttons.appendChild(cancel);
 
+var okImage = document.createElement("img");
+
 //Function for Ok button
 function passOk(){
 	let userName = document.getElementById("username").value;
 	let passWord = document.getElementById("password").value;
 	let box = document.getElementById("box");
-	alert(userName);
-	alert(passWord);
 	if (userName == "Lawnmower Man"){
 		if(passWord == "7.3942"){
 			box.remove();
-			alert("Show Image Here");
+			okImage.setAttribute("src","http://i.imgur.com/IUVDNyp.jpg.");
+			document.body.appendChild(okImage);
 		}
 		else{
-			document.location= 'index.html';
-			body.setAttribute("background-color","red");
+			document.body.style.backgroundColor = "red";
+			userName.value = "";
+			passWord.value = "";
 		}
 	}
 }
