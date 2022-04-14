@@ -41,6 +41,8 @@ function cancel(){
 
 function replaceBox(){
 	let box = document.getElementsByClassName("box");
+	alert(box);
+	box.setAttribute("id","box");
 	box.remove();
 	okImage.setAttribute("src","http://i.imgur.com/IUVDNyp.jpg.");
 }

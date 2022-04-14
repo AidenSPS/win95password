@@ -1,1 +1,2 @@
 getElementsByTagName("object.HMTLElement");
+use getElementsByClassName for the box;
